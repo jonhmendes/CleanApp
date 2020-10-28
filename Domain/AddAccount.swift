@@ -5,7 +5,7 @@ protocol AddAccount {
     
 }
 struct AddAccountModel {
-    var <#name#>: String
+    var name: String
     var email: String
     var password :String
     var passwordConfirmation :String
