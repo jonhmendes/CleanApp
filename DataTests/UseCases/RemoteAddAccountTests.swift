@@ -40,19 +40,28 @@ class RemoteAddAccountTests: XCTestCase {
             httpClientSpy.completeWithData(account.toData()!)
         })
     }
+    func test_add_shoud_not_complete_if_sut_has_been_deallocated(){
+        let httpClientSpy = HttpClientSpy()
+        var sut: RemoteAddAccount? = RemoteAddAccount(url: makeUrl(), httpClient: httpClientSpy)
+        var result: Result<AccountModel, DomainError>?
+        sut?.add(addAccountModel: makeAddAccountModel()) { result = $0 }
+        sut = nil
+        httpClientSpy.completeWithError(.noConnectivity)
+        XCTAssertNil(result)
+    }
 }
 extension RemoteAddAccountTests{
     func makeSut(url:URL = URL(string: "http://any-url.com")!,file:StaticString = #file, line: UInt = #line) -> (sut: RemoteAddAccount,HttpClientSpy:HttpClientSpy) {
         let httpClientSpy = HttpClientSpy()
         let sut = RemoteAddAccount(url: url, httpClient: httpClientSpy)
-        checkMemoryLeak.(for sut,file: file, line: line)
-        checkMemoryLeak.(for httpClientSpy,file: file, line: line)
+        checkMemoryLeak(for: sut, file: file, line: line)
+        checkMemoryLeak(for: httpClientSpy,file: file, line: line)
 
         return (sut, httpClientSpy)
     }
-    func checkMemoryLeak(for instance:AnyObject,file:StaticString = #file, line: UInt = #line) {
+    func checkMemoryLeak(for instance:AnyObject, file:StaticString = #file, line: UInt = #line) {
         addTeardownBlock { [weak instance] in
-            XCTAssertNil(instance, file:file, line: line)
+            XCTAssertNil(instance, file: file, line: line)
         }
     }
     
@@ -64,16 +73,18 @@ extension RemoteAddAccountTests{
         return URL(string: "http://any-url.com")!
     }
     
-    func expect(_ sut:RemoteAddAccount, completeWith expectedResult:Result<AccountModel,DomainError>, when action: () -> Void){
+    func expect(_ sut:RemoteAddAccount, completeWith expectedResult:Result<AccountModel,DomainError>, when action: () -> Void,file:StaticString = #file, line: UInt = #line ){
         let exp = expectation(description: "waiting")
         sut.add(addAccountModel: makeAddAccountModel()) { receivedResult in
             switch (expectedResult, receivedResult) {
-            case .failure(let error): XCTAssertEqual(error, .unexpected)
-            case .success: XCTFail("Expected error received \(result) instead")
+            case (.failure(let expectedError), .failure(let receivedError)): XCTAssertEqual(expectedError, receivedError,file: file, line: line)
+            case (.success(let expectedAccount), .success(let receivedAccount)):XCTAssertEqual(expectedAccount, receivedAccount,file: file, line: line)
+                  
+            default: XCTFail("Expected \(expectedResult) received \(receivedResult) instead",file: file, line: line)
             }
             exp.fulfill()
         }
-        httpClientSpy.completeWithData(Data("invalid_data".utf8))
+        action()
         wait(for: [exp], timeout: 1)
     
     }
