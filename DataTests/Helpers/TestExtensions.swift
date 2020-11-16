@@ -7,5 +7,5 @@ func checkMemoryLeak(for instance:AnyObject, file:StaticString = #file, line: UI
     addTeardownBlock { [weak instance] in
         XCTAssertNil(instance, file: file, line: line)
     }
-}
+  }
 }
