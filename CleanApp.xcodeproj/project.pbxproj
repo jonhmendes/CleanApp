@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F63645A526A5CBB600781BA8 /* AlamofireAdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63645A426A5CBB600781BA8 /* AlamofireAdapterTest.swift */; };
 		F685864B2549C59B00D674F7 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685864A2549C59B00D674F7 /* AddAccount.swift */; };
 		F685864E2549C7A500D674F7 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685864D2549C7A500D674F7 /* AccountModel.swift */; };
 		F685865E2549C9A200D674F7 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68586552549C9A200D674F7 /* Data.framework */; };
@@ -24,12 +25,10 @@
 		F6E97E382562E55900B71B79 /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E97E372562E55900B71B79 /* HttpPostClient.swift */; };
 		F6E97E3E2562E66700B71B79 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E97E3D2562E66700B71B79 /* AccountModelFactory.swift */; };
 		F6E97E4F2562E89B00B71B79 /* infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E97E462562E89B00B71B79 /* infra.framework */; };
-		F6E97E542562E89B00B71B79 /* AlamofireAdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E97E532562E89B00B71B79 /* AlamofireAdapterTest.swift */; };
 		F6E97E692562EA4300B71B79 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68586552549C9A200D674F7 /* Data.framework */; };
 		F6E97E6A2562EA4300B71B79 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F68586552549C9A200D674F7 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6E97E782562EA8900B71B79 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E97E2C2562E2F000B71B79 /* TestExtensions.swift */; };
 		F6E97E7C2562EA8F00B71B79 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E97E302562E3E300B71B79 /* TestFactories.swift */; };
-		F6E97E922562F8F500B71B79 /* AlamofireAdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E97E532562E89B00B71B79 /* AlamofireAdapterTest.swift */; };
 		F6E97EB0256301C300B71B79 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6E97EAF256301C300B71B79 /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +89,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F63645A426A5CBB600781BA8 /* AlamofireAdapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTest.swift; sourceTree = "<group>"; };
 		F68586402549C29400D674F7 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68586432549C29400D674F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F685864A2549C59B00D674F7 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -112,7 +112,6 @@
 		F6E97E462562E89B00B71B79 /* infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E97E492562E89B00B71B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6E97E4E2562E89B00B71B79 /* infraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6E97E532562E89B00B71B79 /* AlamofireAdapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTest.swift; sourceTree = "<group>"; };
 		F6E97E552562E89B00B71B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,7 +168,6 @@
 				F6E97E472562E89B00B71B79 /* infra */,
 				F6E97E522562E89B00B71B79 /* infraTests */,
 				F685862F2549BF5300D674F7 /* Products */,
-				F68586722549C9F200D674F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,13 +214,6 @@
 				F68586642549C9A200D674F7 /* Info.plist */,
 			);
 			path = DataTests;
-			sourceTree = "<group>";
-		};
-		F68586722549C9F200D674F7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F6858698254A341700D674F7 /* UseCases */ = {
@@ -312,7 +303,7 @@
 		F6E97E522562E89B00B71B79 /* infraTests */ = {
 			isa = PBXGroup;
 			children = (
-				F6E97E532562E89B00B71B79 /* AlamofireAdapterTest.swift */,
+				F63645A426A5CBB600781BA8 /* AlamofireAdapterTest.swift */,
 				F6E97E552562E89B00B71B79 /* Info.plist */,
 			);
 			path = infraTests;
@@ -359,8 +350,6 @@
 			dependencies = (
 			);
 			name = Domain;
-			packageProductDependencies = (
-			);
 			productName = Domain;
 			productReference = F68586402549C29400D674F7 /* Domain.framework */;
 			productType = "com.apple.product-type.framework";
@@ -574,7 +563,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6E97E922562F8F500B71B79 /* AlamofireAdapterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,8 +570,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63645A526A5CBB600781BA8 /* AlamofireAdapterTest.swift in Sources */,
 				F6E97E7C2562EA8F00B71B79 /* TestFactories.swift in Sources */,
-				F6E97E542562E89B00B71B79 /* AlamofireAdapterTest.swift in Sources */,
 				F6E97E782562EA8900B71B79 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -898,7 +886,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanMendes.infra;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
@@ -923,7 +911,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanMendes.infra;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
@@ -935,7 +923,6 @@
 		F6E97E5B2562E89B00B71B79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = infraTests/Info.plist;
@@ -944,7 +931,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanMendes.infraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -955,7 +942,6 @@
 		F6E97E5C2562E89B00B71B79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = infraTests/Info.plist;
@@ -964,7 +950,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanMendes.infraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
