@@ -22,7 +22,7 @@ class AlamofireAdapterTest: XCTestCase {
         let sut = AlamofireAdapter(session: session)
         sut.post(to: url)
         let exp = expectation(description: "waiting")
-        UrlProtocolStub.observerRrequest{ request in
+        UrlProtocolStub.observerRequest{ request in
             XCTAssertEqual(url, request.url)
             exp.fulfill()
         }
@@ -33,7 +33,7 @@ class AlamofireAdapterTest: XCTestCase {
 class UrlProtocolStub: URLProtocol {
     static var emit: ((URLRequest) -> Void)?
     
-    static func observerRrequest(completion: @escaping (URLRequest) -> Void){
+    static func observerRequest(completion: @escaping (URLRequest) -> Void){
         UrlProtocolStub.emit = completion
     }
     
