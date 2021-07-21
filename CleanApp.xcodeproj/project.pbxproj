@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F632417326A8A32400F666BD /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F632417226A8A32400F666BD /* AlamofireAdapter.swift */; };
 		F63645A526A5CBB600781BA8 /* AlamofireAdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63645A426A5CBB600781BA8 /* AlamofireAdapterTest.swift */; };
 		F685864B2549C59B00D674F7 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685864A2549C59B00D674F7 /* AddAccount.swift */; };
 		F685864E2549C7A500D674F7 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685864D2549C7A500D674F7 /* AccountModel.swift */; };
@@ -89,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F632417226A8A32400F666BD /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		F63645A426A5CBB600781BA8 /* AlamofireAdapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTest.swift; sourceTree = "<group>"; };
 		F68586402549C29400D674F7 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68586432549C29400D674F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,14 +161,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F632417726A8A3DB00F666BD /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				F632417226A8A32400F666BD /* AlamofireAdapter.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		F68586242549BF5300D674F7 = {
 			isa = PBXGroup;
 			children = (
 				F68586412549C29400D674F7 /* Domain */,
 				F68586562549C9A200D674F7 /* Data */,
 				F68586612549C9A200D674F7 /* DataTests */,
-				F6E97E472562E89B00B71B79 /* infra */,
-				F6E97E522562E89B00B71B79 /* infraTests */,
+				F6E97E472562E89B00B71B79 /* Infra */,
+				F6E97E522562E89B00B71B79 /* InfraTests */,
 				F685862F2549BF5300D674F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -292,21 +302,22 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
-		F6E97E472562E89B00B71B79 /* infra */ = {
+		F6E97E472562E89B00B71B79 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				F632417726A8A3DB00F666BD /* Http */,
 				F6E97E492562E89B00B71B79 /* Info.plist */,
 			);
-			path = infra;
+			path = Infra;
 			sourceTree = "<group>";
 		};
-		F6E97E522562E89B00B71B79 /* infraTests */ = {
+		F6E97E522562E89B00B71B79 /* InfraTests */ = {
 			isa = PBXGroup;
 			children = (
 				F63645A426A5CBB600781BA8 /* AlamofireAdapterTest.swift */,
 				F6E97E552562E89B00B71B79 /* Info.plist */,
 			);
-			path = infraTests;
+			path = InfraTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +466,7 @@
 					};
 					F6E97E452562E89B00B71B79 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1200;
 					};
 					F6E97E4D2562E89B00B71B79 = {
 						CreatedOnToolsVersion = 12.2;
@@ -563,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F632417326A8A32400F666BD /* AlamofireAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +886,7 @@
 		F6E97E582562E89B00B71B79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -891,6 +905,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -898,6 +913,7 @@
 		F6E97E592562E89B00B71B79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -923,6 +939,7 @@
 		F6E97E5B2562E89B00B71B79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = infraTests/Info.plist;
@@ -942,6 +959,7 @@
 		F6E97E5C2562E89B00B71B79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = infraTests/Info.plist;
