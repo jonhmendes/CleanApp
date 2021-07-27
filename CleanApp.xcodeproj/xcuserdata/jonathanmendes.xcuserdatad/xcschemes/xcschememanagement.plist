@@ -19,6 +19,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UseCasesIntegrationTests copy.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>UseCasesIntegrationTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>infra.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>F685865C2549C9A200D674F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6E4701A26B0648600FFEB05</key>
 		<dict>
 			<key>primary</key>
 			<true/>

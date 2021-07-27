@@ -1,7 +1,7 @@
 import XCTest
 import Alamofire
 import Data
-import infra
+import Infra
 
 class AlamofireAdapterTest: XCTestCase {
     func test_post_should_make_request_with_valid_url_and_method() {

@@ -6,27 +6,29 @@
 //
 
 import XCTest
+import Infra
+import Domain
+import Data
 
-class UseCasesIntegrationTests: XCTestCase {
+class AddAccountUseCasesIntegrationTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+    func test_add_account() {
+        let alamofireAdapter = AlamofireAdapter()
+        let url = URL(string: "httos://clean-node-api.herokuapp.com/api/signup")!
+        let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
+        let addAccountModel = AddAccountModel(name: "Jonathan Mendes", email: "jonathan.mendes89@gmail.com", password: "secret", passwordConfirmation: "secret")
+        let exp = expectation(description: "waiting")
+        sut.add(addAccountModel: addAccountModel) { result in
+            switch result {
+            case .failure(let error): XCTAssertEqual(error, .unexpected)
+            case .success(let account):
+                XCTAssertNotNil(account.id)
+                XCTAssertEqual(account.name, addAccountModel.name)
+                XCTAssertEqual(account.email, addAccountModel.email)
+            }
+            exp.fulfill()
         }
+        wait(for: [exp], timeout: 5)
     }
 
 }
