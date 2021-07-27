@@ -42,6 +42,8 @@ class AlamofireAdapterTest: XCTestCase {
     }
     
     func test_post_should_complete_with_error_when_request_completes_with_non_200() {
+        expectResult(.failure(.noConnectivity), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 100), error: nil))
+        expectResult(.failure(.noConnectivity), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 300), error: nil))
         expectResult(.failure(.badRequest), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 400), error: nil))
         expectResult(.failure(.unauthorized), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 401), error: nil))
         expectResult(.failure(.forbiden), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 403), error: nil))
@@ -50,7 +52,6 @@ class AlamofireAdapterTest: XCTestCase {
         expectResult(.failure(.serverError), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 500), error: nil))
         expectResult(.failure(.serverError), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 550), error: nil))
         expectResult(.failure(.serverError), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 599), error: nil))
-
     }
 }
 
