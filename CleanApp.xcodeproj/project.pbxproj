@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F632417326A8A32400F666BD /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F632417226A8A32400F666BD /* AlamofireAdapter.swift */; };
+		F632418526A8A65D00F666BD /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F632418426A8A65D00F666BD /* UrlProtocolStub.swift */; };
+		F632418C26A8A8F500F666BD /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F632418426A8A65D00F666BD /* UrlProtocolStub.swift */; };
 		F63645A526A5CBB600781BA8 /* AlamofireAdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63645A426A5CBB600781BA8 /* AlamofireAdapterTest.swift */; };
 		F685864B2549C59B00D674F7 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685864A2549C59B00D674F7 /* AddAccount.swift */; };
 		F685864E2549C7A500D674F7 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685864D2549C7A500D674F7 /* AccountModel.swift */; };
@@ -91,6 +93,7 @@
 
 /* Begin PBXFileReference section */
 		F632417226A8A32400F666BD /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
+		F632418426A8A65D00F666BD /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		F63645A426A5CBB600781BA8 /* AlamofireAdapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTest.swift; sourceTree = "<group>"; };
 		F68586402549C29400D674F7 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68586432549C29400D674F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				F632417226A8A32400F666BD /* AlamofireAdapter.swift */,
+				F632418426A8A65D00F666BD /* UrlProtocolStub.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -576,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F632417326A8A32400F666BD /* AlamofireAdapter.swift in Sources */,
+				F632418526A8A65D00F666BD /* UrlProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +591,7 @@
 				F63645A526A5CBB600781BA8 /* AlamofireAdapterTest.swift in Sources */,
 				F6E97E7C2562EA8F00B71B79 /* TestFactories.swift in Sources */,
 				F6E97E782562EA8900B71B79 /* TestExtensions.swift in Sources */,
+				F632418C26A8A8F500F666BD /* UrlProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
