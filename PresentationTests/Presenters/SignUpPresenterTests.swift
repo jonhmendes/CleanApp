@@ -8,7 +8,7 @@
 import XCTest
 import Presentation
 
-class SignUpPresentationTests: XCTestCase {
+class SignUpPresenterTests: XCTestCase {
     func test_signUp_should_error_message_if_name_is_not_provided() {
         let (sut, alertViewSpy) = makeSut()
         
@@ -40,9 +40,16 @@ class SignUpPresentationTests: XCTestCase {
         sut.signUp(viewModel: signUpViewModel)
         XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "o campo Confirmar Senha é obrigatório"))
     }
+    func test_signUp_should_error_message_if_password_confirmation_not_match() {
+        let (sut, alertViewSpy) = makeSut()
+        
+        let signUpViewModel = SignUpViewModel(name: "Jonahan", email: "any_password", password: "any_password", passwordConfirmation: "wrong_password")
+        sut.signUp(viewModel: signUpViewModel)
+        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "Falha ao confirmar senha"))
+    }
 }
 
-extension SignUpPresentationTests {
+extension SignUpPresenterTests {
     func makeSut() -> (sut: SignUpPresenter, alertViewSpy: AlertViewSpy) {
         let alertViewSpy = AlertViewSpy()
         let sut = SignUpPresenter(alertView: alertViewSpy)
