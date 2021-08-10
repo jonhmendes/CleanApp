@@ -6,7 +6,7 @@ func makeInvalidData() -> Data {
 }
 
 func makeValidData() -> Data {
-    return Data("{\"name\":\"Jonathan\"}".utf8)
+    return Data("{\"name\":\"any_name\"}".utf8)
 }
 
 func makeEmptyData() -> Data {

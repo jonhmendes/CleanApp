@@ -7,6 +7,8 @@
 
 import XCTest
 import Presentation
+import Domain
+import Presentation
 
 class SignUpPresenterTests: XCTestCase {
     func test_signUp_should_error_message_if_name_is_not_provided() {
@@ -61,15 +63,22 @@ class SignUpPresenterTests: XCTestCase {
         sut.signUp(viewModel: signUpViewModel)
         XCTAssertEqual(emailValidatorSpy.email, signUpViewModel.email)
     }
+    
+    func test_signUp_should_call_addAccount_with_correct_values() {
+        let addAccountSpy = AddAccountSpy()
+        let sut = makeSut(addAccount: addAccountSpy)
+        sut.signUp(viewModel: makeSignUpViewModel())
+        XCTAssertEqual(addAccountSpy.addAccountModel, makeAddAccountModel())
+    }
 }
 
 extension SignUpPresenterTests {
-    func makeSut(alertView: AlertViewSpy = AlertViewSpy(), emailValidator: EmailValidator = EmailValidatorSpy()) -> SignUpPresenter {
-        let sut = SignUpPresenter(alertView: alertView, emailValidator: emailValidator)
+    func makeSut(alertView: AlertViewSpy = AlertViewSpy(), emailValidator: EmailValidator = EmailValidatorSpy(), addAccount: AddAccountSpy = AddAccountSpy()) -> SignUpPresenter {
+        let sut = SignUpPresenter(alertView: alertView, emailValidator: emailValidator, addAccount: addAccount)
         return sut
     }
     
-    func makeSignUpViewModel(name: String? = "Jonahan", email: String? = "valid_email@mail.com", password: String? = "any_password", passwordConfirmation: String? = "any_password") -> SignUpViewModel {
+    func makeSignUpViewModel(name: String? = "any_name", email: String? = "valid_email@mail.com", password: String? = "any_password", passwordConfirmation: String? = "any_password") -> SignUpViewModel {
         return SignUpViewModel(name: name, email: email, password: password, passwordConfirmation: passwordConfirmation)
     }
     
@@ -100,6 +109,13 @@ extension SignUpPresenterTests {
         
         func simulateInvalidEmail() {
             self.isValid = false
+        }
+    }
+    class AddAccountSpy: AddAccount {
+        var addAccountModel: AddAccountModel?
+        
+        func add(addAccountModel: AddAccountModel, completion: @escaping (Result<AccountModel, DomainError>) -> Void) {
+            self.addAccountModel = addAccountModel
         }
     }
 }
