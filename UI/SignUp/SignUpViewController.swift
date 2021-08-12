@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 import Presentation
 
-@available(iOS 13.0, *)
 final class SignUpViewController: UIViewController, Storyboarded {
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var saveButton: UIButton!
@@ -35,7 +34,6 @@ final class SignUpViewController: UIViewController, Storyboarded {
         signUp?(viewModel)
     }
 }
-@available(iOS 13.0, *)
 extension SignUpViewController: LoadingView {
     func display(viewModel: LoadingViewModel) {
         if viewModel.isLoading {
@@ -47,7 +45,6 @@ extension SignUpViewController: LoadingView {
         }
     }
 }
-@available(iOS 13.0, *)
 extension SignUpViewController: AlertView {
     func showMessage(viewModel: AlertViewModel) {
         let alert = UIAlertController(title: viewModel.title, message: viewModel.message, preferredStyle: .alert)

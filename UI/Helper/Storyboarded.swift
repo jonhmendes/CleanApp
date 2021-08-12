@@ -11,7 +11,6 @@ import UIKit
 public protocol Storyboarded {
     static func instantiate() -> Self
 }
-@available(iOS 13.0, *)
 extension Storyboarded where Self: UIViewController{
     public static func instantiate() -> Self {
         let vcName = String(describing: self)
