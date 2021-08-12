@@ -42,6 +42,10 @@
 		F6D4CCB725599648009AD066 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D4CCB625599648009AD066 /* DomainError.swift */; };
 		F6D4CCBD255998B0009AD066 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D4CCBC255998B0009AD066 /* HttpError.swift */; };
 		F6D4CCC2255B2E28009AD066 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D4CCC1255B2E28009AD066 /* ExtensionHelpers.swift */; };
+		F6D6E7C726C578230002C31A /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F623B1BB26B0755600B7E0F1 /* Presentation.framework */; };
+		F6D6E7C826C578230002C31A /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F623B1BB26B0755600B7E0F1 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6DDC69726C5673500C1A408 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DDC69626C5673500C1A408 /* SignUpViewController.swift */; };
+		F6DDC69F26C5676900C1A408 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DDC69E26C5676900C1A408 /* SignUp.storyboard */; };
 		F6E4701E26B0648600FFEB05 /* AddAccountUseCasesIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4701D26B0648600FFEB05 /* AddAccountUseCasesIntegrationTests.swift */; };
 		F6E97E2D2562E2F000B71B79 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E97E2C2562E2F000B71B79 /* TestExtensions.swift */; };
 		F6E97E312562E3E300B71B79 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E97E302562E3E300B71B79 /* TestFactories.swift */; };
@@ -90,6 +94,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F6D2762626C446E6005F18B8;
 			remoteInfo = UI;
+		};
+		F6D6E7C926C578230002C31A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68586252549BF5300D674F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F623B1BA26B0755600B7E0F1;
+			remoteInfo = Presentation;
 		};
 		F6E4702726B0653900FFEB05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -151,6 +162,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6D6E7CB26C578240002C31A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6D6E7C826C578230002C31A /* Presentation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E97E6D2562EA4300B71B79 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +227,8 @@
 		F6D4CCB625599648009AD066 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		F6D4CCBC255998B0009AD066 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		F6D4CCC1255B2E28009AD066 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		F6DDC69626C5673500C1A408 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F6DDC69E26C5676900C1A408 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		F6E4701B26B0648600FFEB05 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E4701D26B0648600FFEB05 /* AddAccountUseCasesIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountUseCasesIntegrationTests.swift; sourceTree = "<group>"; };
 		F6E4701F26B0648600FFEB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -262,6 +286,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D6E7C726C578230002C31A /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +564,8 @@
 			isa = PBXGroup;
 			children = (
 				F6D2762A26C446E6005F18B8 /* Info.plist */,
+				F6DDC69626C5673500C1A408 /* SignUpViewController.swift */,
+				F6DDC69E26C5676900C1A408 /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -756,10 +783,12 @@
 				F6D2762326C446E6005F18B8 /* Sources */,
 				F6D2762426C446E6005F18B8 /* Frameworks */,
 				F6D2762526C446E6005F18B8 /* Resources */,
+				F6D6E7CB26C578240002C31A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F6D6E7CA26C578230002C31A /* PBXTargetDependency */,
 			);
 			name = UI;
 			productName = UI;
@@ -874,6 +903,7 @@
 					};
 					F6D2762626C446E6005F18B8 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					F6D2762E26C446E6005F18B8 = {
 						CreatedOnToolsVersion = 12.0;
@@ -960,6 +990,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DDC69F26C5676900C1A408 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1060,6 +1091,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DDC69726C5673500C1A408 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1127,6 +1159,11 @@
 			target = F6D2762626C446E6005F18B8 /* UI */;
 			targetProxy = F6D2763126C446E6005F18B8 /* PBXContainerItemProxy */;
 		};
+		F6D6E7CA26C578230002C31A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F623B1BA26B0755600B7E0F1 /* Presentation */;
+			targetProxy = F6D6E7C926C578230002C31A /* PBXContainerItemProxy */;
+		};
 		F6E4702826B0653900FFEB05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F68586542549C9A200D674F7 /* Data */;
@@ -1167,6 +1204,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Presentation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1195,6 +1233,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Presentation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1384,6 +1423,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1412,6 +1452,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1439,6 +1480,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Data/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1467,6 +1509,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Data/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1525,6 +1568,7 @@
 		F6D2763926C446E6005F18B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1533,6 +1577,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1543,7 +1588,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1551,6 +1597,7 @@
 		F6D2763A26C446E6005F18B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1559,6 +1606,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1569,7 +1617,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1577,9 +1625,11 @@
 		F6D2763C26C446E6005F18B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1597,9 +1647,11 @@
 		F6D2763D26C446E6005F18B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1672,6 +1724,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = infra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1700,6 +1753,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = infra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
