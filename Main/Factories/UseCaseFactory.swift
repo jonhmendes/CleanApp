@@ -12,7 +12,7 @@ import Domain
 
 public class UseCaseFactory {
     private static let  = AlamofireAdapter()
-    private static let apiBaseUrl = "httos://clean-node-api.herokuapp.com/api"
+    private static let apiBaseUrl = Enviroment.variable(.apiBaseUrl)
     
     private static func makeUrl(path: String) -> URL {
         return URL(string: "\(apiBaseUrl)/\(path)")!

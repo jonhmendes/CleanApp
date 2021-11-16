@@ -58,6 +58,14 @@
 		F6A1C9392743F28E003A7DBC /* Composer in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C9322743F28E003A7DBC /* Composer */; };
 		F6A1C9422743F6A3003A7DBC /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C93B2743F6A3003A7DBC /* WeakVarProxy.swift */; };
 		F6A1C94A2743FA88003A7DBC /* SignUpFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C9432743FA88003A7DBC /* SignUpFactories.swift */; };
+		F6A1C9502743FDBA003A7DBC /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */; };
+		F6A1C9512743FDBA003A7DBC /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */; };
+		F6A1C9522743FDBA003A7DBC /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */; };
+		F6A1C9532743FDBA003A7DBC /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */; };
+		F6A1C9542743FDBA003A7DBC /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */; };
+		F6A1C9552743FDBA003A7DBC /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */; };
+		F6A1C9562743FDBA003A7DBC /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */; };
+		F6A1C95A27440111003A7DBC /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C95727440038003A7DBC /* SignUpIntegrationTests.swift */; };
 		F6D275CF26C435D9005F18B8 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D275CE26C435D9005F18B8 /* SignUpViewModel.swift */; };
 		F6D275D626C43690005F18B8 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D275D526C43690005F18B8 /* SignUpMapper.swift */; };
 		F6D275E926C43859005F18B8 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D275E826C43859005F18B8 /* AlertViewSpy.swift */; };
@@ -346,6 +354,10 @@
 		F6A1C9322743F28E003A7DBC /* Composer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Composer; sourceTree = "<group>"; };
 		F6A1C93B2743F6A3003A7DBC /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		F6A1C9432743FA88003A7DBC /* SignUpFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactories.swift; sourceTree = "<group>"; };
+		F6A1C94D2743FCCF003A7DBC /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		F6A1C94E2743FD3E003A7DBC /* Release.xcconfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig.xcconfig; sourceTree = "<group>"; };
+		F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		F6A1C95727440038003A7DBC /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		F6D275CE26C435D9005F18B8 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		F6D275D526C43690005F18B8 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		F6D275E826C43859005F18B8 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -378,8 +390,6 @@
 		F6D6E8D426C5CE200002C31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6D6E8D926C5CE200002C31A /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D6E8DF26C5CE200002C31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6D6E8E826C5CE200002C31A /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
-		F6D6E8EA26C5CE200002C31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6DDC69626C5673500C1A408 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F6DDC69E26C5676900C1A408 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		F6E4701B26B0648600FFEB05 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -604,7 +614,6 @@
 				F6D6E84F26C5C4530002C31A /* ValidationTests */,
 				F6D6E8C526C5CE1C0002C31A /* Main */,
 				F6D6E8DC26C5CE200002C31A /* MainTests */,
-				F6D6E8E726C5CE200002C31A /* MainUITests */,
 				F685862F2549BF5300D674F7 /* Products */,
 				F623B1A026B06B6900B7E0F1 /* UseCasesIntegrationTests copy-Info.plist */,
 				F641AD2626BD7F6B00176045 /* Frameworks */,
@@ -714,6 +723,16 @@
 				F6A1C9432743FA88003A7DBC /* SignUpFactories.swift */,
 			);
 			path = Proxies;
+			sourceTree = "<group>";
+		};
+		F6A1C94C2743FCBA003A7DBC /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1C94D2743FCCF003A7DBC /* Debug.xcconfig */,
+				F6A1C94E2743FD3E003A7DBC /* Release.xcconfig.xcconfig */,
+				F6A1C94F2743FDBA003A7DBC /* Enviroment.swift */,
+			);
+			path = Env;
 			sourceTree = "<group>";
 		};
 		F6D275C826C435B8005F18B8 /* SignUp */ = {
@@ -874,6 +893,7 @@
 		F6D6E8C526C5CE1C0002C31A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F6A1C94C2743FCBA003A7DBC /* Env */,
 				F6A1C93A2743F681003A7DBC /* Proxies */,
 				F6A1C9322743F28E003A7DBC /* Composer */,
 				F6A1C92A2743F275003A7DBC /* Factories */,
@@ -889,18 +909,10 @@
 		F6D6E8DC26C5CE200002C31A /* MainTests */ = {
 			isa = PBXGroup;
 			children = (
+				F6A1C95727440038003A7DBC /* SignUpIntegrationTests.swift */,
 				F6D6E8DF26C5CE200002C31A /* Info.plist */,
 			);
 			path = MainTests;
-			sourceTree = "<group>";
-		};
-		F6D6E8E726C5CE200002C31A /* MainUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F6D6E8E826C5CE200002C31A /* MainUITests.swift */,
-				F6D6E8EA26C5CE200002C31A /* Info.plist */,
-			);
-			path = MainUITests;
 			sourceTree = "<group>";
 		};
 		F6E4701C26B0648600FFEB05 /* UseCasesIntegrationTests */ = {
@@ -1315,6 +1327,7 @@
 					};
 					F6D6E8D826C5CE200002C31A = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1310;
 						TestTargetID = F6D6E8C326C5CE1C0002C31A;
 					};
 					F6E4701A26B0648600FFEB05 = {
@@ -1488,6 +1501,7 @@
 			files = (
 				F6D275D626C43690005F18B8 /* SignUpMapper.swift in Sources */,
 				F641AD1F26BD7F3A00176045 /* SignUpPresenter.swift in Sources */,
+				F6A1C9532743FDBA003A7DBC /* Enviroment.swift in Sources */,
 				F601DB5A26C424DE0019E989 /* LoadingView.swift in Sources */,
 				F6D275CF26C435D9005F18B8 /* SignUpViewModel.swift in Sources */,
 				F641AD3326BD804900176045 /* AlertView.swift in Sources */,
@@ -1515,6 +1529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F685868B254A217600D674F7 /* Model.swift in Sources */,
+				F6A1C9502743FDBA003A7DBC /* Enviroment.swift in Sources */,
 				F685864B2549C59B00D674F7 /* AddAccount.swift in Sources */,
 				F6D4CCB725599648009AD066 /* DomainError.swift in Sources */,
 				F685864E2549C7A500D674F7 /* AccountModel.swift in Sources */,
@@ -1526,6 +1541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6858695254A283600D674F7 /* HttpPostClient.swift in Sources */,
+				F6A1C9512743FDBA003A7DBC /* Enviroment.swift in Sources */,
 				F6D4CCC2255B2E28009AD066 /* ExtensionHelpers.swift in Sources */,
 				F6D4CCBD255998B0009AD066 /* HttpError.swift in Sources */,
 				F6858691254A27E400D674F7 /* RemoteAddAccount.swift in Sources */,
@@ -1550,6 +1566,7 @@
 			files = (
 				F6D6E81D26C5BC8A0002C31A /* UIViewController.swift in Sources */,
 				F6DDC69726C5673500C1A408 /* SignUpViewController.swift in Sources */,
+				F6A1C9542743FDBA003A7DBC /* Enviroment.swift in Sources */,
 				F6D6E82526C5BE390002C31A /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1567,6 +1584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A1C9552743FDBA003A7DBC /* Enviroment.swift in Sources */,
 				F6D6E8B126C5CCA00002C31A /* EmailValidatorAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1584,6 +1602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D6E8C726C5CE1C0002C31A /* AppDelegate.swift in Sources */,
+				F6A1C9562743FDBA003A7DBC /* Enviroment.swift in Sources */,
 				F6A1C9422743F6A3003A7DBC /* WeakVarProxy.swift in Sources */,
 				F6A1C94A2743FA88003A7DBC /* SignUpFactories.swift in Sources */,
 				F6D6E8C926C5CE1C0002C31A /* SceneDelegate.swift in Sources */,
@@ -1594,6 +1613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A1C95A27440111003A7DBC /* SignUpIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1609,6 +1629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A1C9522743FDBA003A7DBC /* Enviroment.swift in Sources */,
 				F632417326A8A32400F666BD /* AlamofireAdapter.swift in Sources */,
 				F632418526A8A65D00F666BD /* UrlProtocolStub.swift in Sources */,
 			);
@@ -2325,6 +2346,7 @@
 		};
 		F6D6E8EC26C5CE210002C31A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A1C94D2743FCCF003A7DBC /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2344,6 +2366,7 @@
 		};
 		F6D6E8ED26C5CE210002C31A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A1C94E2743FD3E003A7DBC /* Release.xcconfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2366,6 +2389,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -2376,6 +2400,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clean.app.MainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Main.app/Main";
@@ -2387,6 +2412,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
